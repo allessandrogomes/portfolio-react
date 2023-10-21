@@ -17,7 +17,7 @@ const ContainerTecnologias = styled.section`
 
 const Tecnologias = ({ darkModeAtivo }) => {
     return (
-        <ContainerTecnologias>
+        <ContainerTecnologias id="tecnologias">
             <TituloESubtituloSection titulo="Minhas tecnologias" subtitulo="Tecnologias que estou trabalhando até o momento" />
             <IconesTecnologia darkModeAtivo={darkModeAtivo}/>
         </ContainerTecnologias>

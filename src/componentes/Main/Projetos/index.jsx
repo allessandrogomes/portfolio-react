@@ -19,7 +19,7 @@ const ContainerCards = styled.div`
 
 const Projetos = ({ darkModeAtivo }) => {
     return (
-        <ContainerPrincipal>
+        <ContainerPrincipal id="projetos">
             <TituloESubtituloSection titulo="Projetos" subtitulo="Meus principais desenvolvimentos" />
             <ContainerCards>
                 <Card

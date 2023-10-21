@@ -39,7 +39,7 @@ const EstilosGlobais = createGlobalStyle`
 
     :root {
         --fundoPrincipal-cor: #f5f5f5;
-        --darkMode-icone: url('src/assets/imagens/cabecalho/moon-darkmode-icon.svg');
+        --darkMode-icone: url('./assets/imagens/cabecalho/moon-darkmode-icon.svg');
         --cabecalho-cor: #ececec;
         --texto-cor-primaria: #666666;
         --texto-cor-secundaria: #42446e;

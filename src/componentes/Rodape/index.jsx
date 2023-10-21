@@ -118,7 +118,7 @@ const Creditos = styled.h3`
 
 const Rodape = () => {
     return (
-        <footer>
+        <footer id="contato">
             <ContainerPrincipal>
                 <ContainerContato>
                     <Logo><h2><a href="https://github.com/allessandrogomes" target="_blank">Alessandro Gomes Desenvolvedor Front End</a></h2></Logo>

@@ -29,7 +29,7 @@ const Texto = styled.h4`
 
 const SobreMim = () => {
     return (
-        <Section>
+        <Section id="sobre">
             <TituloESubtituloSection titulo="Sobre mim"/>
             <Texto>
                 Olá! Meu nome é Alessandro Gomes e sou um estudante de Análise e Desenvolvimento de Sistemas com foco em desenvolvimento de Front-End. Minhas principais habilidades incluem HTML, CSS, JavaScript e ReactJs, bem como Git, GitHub, Fetch API, SASS e TailwindCSS. Estou constantemente buscando maneiras de aprimorar meus aplicativos e torná-los mais eficientes e usáveis. Como estudante, tenho uma mentalidade analítica e estou sempre disposto a aprender novas habilidades e conhecimentos. Eu amo a sensação de ver meu código funcionando e apreciar a satisfação que vem com a resolução de problemas e a criação de aplicativos atraentes e funcionais.
