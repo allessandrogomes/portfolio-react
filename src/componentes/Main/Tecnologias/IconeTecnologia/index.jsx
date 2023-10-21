@@ -37,14 +37,14 @@ const Icone = styled.div`
 const IconesTecnologia = ({ darkModeAtivo }) => {
     return (
         <Container>
-            <Icone imagem={'src/assets/imagens/main/tecnologias/html-icon.svg'}><span>HTML</span></Icone>
-            <Icone imagem={'src/assets/imagens/main/tecnologias/css-icon.svg'}><span>CSS</span></Icone>
-            <Icone imagem={'src/assets/imagens/main/tecnologias/javascript-icon.svg'}><span>JAVASCRIPT</span></Icone>
-            <Icone imagem={'src/assets/imagens/main/tecnologias/react-icon.svg'}><span>REACTJS</span></Icone>
-            <Icone imagem={'src/assets/imagens/main/tecnologias/tailwindcss-icon.svg'}><span>TAILWINDCSS</span></Icone>
-            <Icone imagem={'src/assets/imagens/main/tecnologias/sass-icon.svg'}><span>SASS</span></Icone>
-            <Icone imagem={'src/assets/imagens/main/tecnologias/git-icon.svg'}><span>GIT</span></Icone>
-            <Icone imagem={darkModeAtivo ? 'src/assets/imagens/main/tecnologias/github-dark-icon.svg' : 'src/assets/imagens/main/tecnologias/github-ligth-icon.svg'}><span>GITHUB</span></Icone>
+            <Icone imagem={'/imagens/main/tecnologias/html-icon.svg'}><span>HTML</span></Icone>
+            <Icone imagem={'/imagens/main/tecnologias/css-icon.svg'}><span>CSS</span></Icone>
+            <Icone imagem={'/imagens/main/tecnologias/javascript-icon.svg'}><span>JAVASCRIPT</span></Icone>
+            <Icone imagem={'/imagens/main/tecnologias/react-icon.svg'}><span>REACTJS</span></Icone>
+            <Icone imagem={'/imagens/main/tecnologias/tailwindcss-icon.svg'}><span>TAILWINDCSS</span></Icone>
+            <Icone imagem={'/imagens/main/tecnologias/sass-icon.svg'}><span>SASS</span></Icone>
+            <Icone imagem={'/imagens/main/tecnologias/git-icon.svg'}><span>GIT</span></Icone>
+            <Icone imagem={darkModeAtivo ? '/imagens/main/tecnologias/github-dark-icon.svg' : '/imagens/main/tecnologias/github-ligth-icon.svg'}><span>GITHUB</span></Icone>
         </Container>
     )
 }
