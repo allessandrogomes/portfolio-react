@@ -26,42 +26,42 @@ const Projetos = ({ darkModeAtivo }) => {
                     darkModeAtivo={darkModeAtivo}
                     titulo="CarsOn"
                     descricao="Site de compra e venda de carros, desenvolvido para fornecer uma plataforma online fácil de usar para conectar compradores e vendedores de carros." 
-                    imagem="src/assets/imagens/main/projetos/projeto-carson.png"
+                    imagem="/imagens/main/projetos/projeto-carson.png"
                     tecnologias="ReactJs e TailwindCss"
                 />
                 <Card
                     darkModeAtivo={darkModeAtivo} 
                     titulo="Em desenvolvimento"
                     descricao="Não se preocupe, novos projetos estão em desenvolvimento. Estou constantemente estudando e buscando evoluir para trazer conteúdos de excelência." 
-                    imagem="src/assets/imagens/main/projetos/em-desenvolvimento.jpeg"
+                    imagem="/imagens/main/projetos/em-desenvolvimento.jpeg"
                     tecnologias="ReactJs e TailwindCss"
                 />
                 <Card
                     darkModeAtivo={darkModeAtivo} 
                     titulo="Em desenvolvimento"
                     descricao="Não se preocupe, novos projetos estão em desenvolvimento. Estou constantemente estudando e buscando evoluir para trazer conteúdos de excelência." 
-                    imagem="src/assets/imagens/main/projetos/em-desenvolvimento.jpeg"
+                    imagem="/imagens/main/projetos/em-desenvolvimento.jpeg"
                     tecnologias="ReactJs e TailwindCss"
                 />
                 <Card
                     darkModeAtivo={darkModeAtivo} 
                     titulo="Em desenvolvimento"
                     descricao="Não se preocupe, novos projetos estão em desenvolvimento. Estou constantemente estudando e buscando evoluir para trazer conteúdos de excelência." 
-                    imagem="src/assets/imagens/main/projetos/em-desenvolvimento.jpeg"
+                    imagem="/imagens/main/projetos/em-desenvolvimento.jpeg"
                     tecnologias="ReactJs e TailwindCss"
                 />
                 <Card
                     darkModeAtivo={darkModeAtivo} 
                     titulo="Em desenvolvimento"
                     descricao="Não se preocupe, novos projetos estão em desenvolvimento. Estou constantemente estudando e buscando evoluir para trazer conteúdos de excelência." 
-                    imagem="src/assets/imagens/main/projetos/em-desenvolvimento.jpeg"
+                    imagem="/imagens/main/projetos/em-desenvolvimento.jpeg"
                     tecnologias="ReactJs e TailwindCss"
                 />
                 <Card
                     darkModeAtivo={darkModeAtivo} 
                     titulo="Em desenvolvimento"
                     descricao="Não se preocupe, novos projetos estão em desenvolvimento. Estou constantemente estudando e buscando evoluir para trazer conteúdos de excelência." 
-                    imagem="src/assets/imagens/main/projetos/em-desenvolvimento.jpeg"
+                    imagem="/imagens/main/projetos/em-desenvolvimento.jpeg"
                     tecnologias="ReactJs e TailwindCss"
                 />
             </ContainerCards>

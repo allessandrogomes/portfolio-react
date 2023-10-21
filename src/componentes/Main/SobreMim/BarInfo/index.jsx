@@ -99,15 +99,15 @@ const BarInfo = ({ texto, horario, companhia, local, periodo }) => {
             </ContainerTextoEHorario>
             <ContainerCompanhiaLocalPeriodo>
                 <div>
-                    <img src="src/assets/imagens/main/sobre-mim/company-icon.svg"/>
+                    <img src="/imagens/main/sobre-mim/company-icon.svg"/>
                     <p>{companhia}</p>
                 </div>
                 <div>
-                    <img src="src/assets/imagens/main/sobre-mim/local-icon.svg"/>
+                    <img src="/imagens/main/sobre-mim/local-icon.svg"/>
                     <p>{local}</p>
                 </div>
                 <div>
-                    <img src="src/assets/imagens/main/sobre-mim/calendar-icon.png"/>
+                    <img src="/imagens/main/sobre-mim/calendar-icon.png"/>
                     <p>{periodo}</p>
                 </div>
             </ContainerCompanhiaLocalPeriodo>

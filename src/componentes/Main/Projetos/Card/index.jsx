@@ -98,11 +98,11 @@ const Card = ({ imagem, titulo, descricao, tecnologias, darkModeAtivo}) => {
             </Tecnologias>
             <Rodape>
                 <LinkRodapeCard 
-                    imagem={darkModeAtivo ? 'src/assets/imagens/main/projetos/cards/livepreview-dark-icon.png' : 'src/assets/imagens/main/projetos/cards/livepreview-ligth-icon.png'} 
+                    imagem={darkModeAtivo ? '/imagens/main/projetos/cards/livepreview-dark-icon.png' : '/imagens/main/projetos/cards/livepreview-ligth-icon.png'} 
                     texto="Ver Projeto"
                 />
                 <LinkRodapeCard 
-                    imagem={darkModeAtivo? 'src/assets/imagens/main/projetos/cards/github-dark-icon.png' : 'src/assets/imagens/main/projetos/cards/github-ligth-icon.png'} 
+                    imagem={darkModeAtivo? '/imagens/main/projetos/cards/github-dark-icon.png' : '/imagens/main/projetos/cards/github-ligth-icon.png'} 
                     texto="Ver Código"
                 />
             </Rodape>
