@@ -54,6 +54,8 @@ const Contato = styled.div`
     @media (max-width: 1024px) {
         flex-direction: column;
         gap: 40px;
+        min-width: 100vw;
+        max-width: 100vw;
     }
     p{
         font-family: 'DM Sans';

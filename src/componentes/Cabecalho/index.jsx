@@ -13,7 +13,7 @@ const HeaderEstilizado = styled.header`
     position: fixed;
     height: 15vh;
     justify-content: space-around;
-    width: 100%;
+    width: 100vw;
     z-index: 10;
 `
 
@@ -33,6 +33,7 @@ const Container = styled.div`
         background-color: var(--cabecalho-cor);
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
+
     }
 `
 
