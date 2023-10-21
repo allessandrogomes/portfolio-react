@@ -39,12 +39,12 @@ const EstilosGlobais = createGlobalStyle`
 
     :root {
         --fundoPrincipal-cor: #f5f5f5;
-        --darkMode-icone: url('./assets/imagens/cabecalho/moon-darkmode-icon.svg');
+        --darkMode-icone: url('/src/assets/imagens/cabecalho/moon-darkmode-icon.svg');
         --cabecalho-cor: #ececec;
         --texto-cor-primaria: #666666;
         --texto-cor-secundaria: #42446e;
-        --github-icon: url('src/assets/imagens/cabecalho/github-light-icon.svg');
-        --linkedin-icon: url('src/assets/imagens/cabecalho/linkedin-ligth-icon.svg');
+        --github-icon: url('/src/assets/imagens/cabecalho/github-light-icon.svg');
+        --linkedin-icon: url('/src/assets/imagens/cabecalho/linkedin-ligth-icon.svg');
         --card-cor: #ffffff;
         --card-titulo-cor: #000000;
         --card-descricao-cor: #666666;
@@ -52,8 +52,8 @@ const EstilosGlobais = createGlobalStyle`
         --card-link-cor: #000000;
         --card-sombra-cor: rgba(0, 0, 0, 0.2);
         --contato-cor: #42446e;
-        --github-footer-icon: url('src/assets/imagens/rodape/github-ligth-icon-footer.png');
-        --linkedin-footer-icon: url('src/assets/imagens/rodape/linkedin-ligth-icon-footer.png');
+        --github-footer-icon: url('/src/assets/imagens/rodape/github-ligth-icon-footer.png');
+        --linkedin-footer-icon: url('/src/assets/imagens/rodape/linkedin-ligth-icon-footer.png');
     }
 
     .dark-mode {
