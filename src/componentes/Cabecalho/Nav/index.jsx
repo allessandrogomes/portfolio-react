@@ -34,7 +34,7 @@ const Link = styled.li`
     }
 `
 
-const Nav = () => {
+const Nav = ({ aoClicarLink }) => {
 
     const scrollParaSection = (idDaSessao) => {
         const section = document.getElementById(idDaSessao)
@@ -47,31 +47,46 @@ const Nav = () => {
         <NavEstilizado>
             <ul>
                 <Link
-                    onClick={() => document.body.scrollIntoView({ behavior: 'smooth' })}
+                    onClick={(e) => {
+                        document.body.scrollIntoView({ behavior: 'smooth' })
+                        aoClicarLink(e)
+                    }}
                     id="linkNav"
                     className="linkNav">
                     <h3>Início</h3>
                 </Link>
                 <Link 
-                    onClick={() => scrollParaSection('tecnologias')}
+                    onClick={(e) => {
+                        scrollParaSection('tecnologias')
+                        aoClicarLink(e)
+                    }}
                     id="linkNav" 
                     className="linkNav">
                     <h3>Tecnologias</h3>
                 </Link>
                 <Link 
-                    onClick={() => scrollParaSection('projetos')}
+                    onClick={(e) => {
+                        scrollParaSection('projetos')
+                        aoClicarLink(e)
+                    }}
                     id="linkNav" 
                     className="linkNav">
                     <h3>Projetos</h3>
                 </Link>
                 <Link 
-                    onClick={() => scrollParaSection('sobre')}
+                    onClick={(e) => {
+                        scrollParaSection('sobre')
+                        aoClicarLink(e)
+                    }}
                     id="linkNav" 
                     className="linkNav">
                     <h3>Sobre</h3>
                 </Link>
                 <Link 
-                    onClick={() => scrollParaSection('contato')}
+                    onClick={(e) => {
+                        scrollParaSection('contato')
+                        aoClicarLink(e)
+                    }}
                     id="linkNav" 
                     className="linkNav">
                     <h3>Contato</h3>

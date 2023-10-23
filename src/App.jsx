@@ -8,6 +8,7 @@ import Projetos from "./componentes/Main/Projetos"
 import SobreMim from "./componentes/Main/SobreMim"
 import Rodape from "./componentes/Rodape"
 import { useEffect, useState } from "react"
+import BotaoVoltarAoTopo from "./componentes/BotaoVoltarAoTopo"
 
 const FundoPrincipal = styled.div`
   background-color: var(--fundoPrincipal-cor);
@@ -65,7 +66,7 @@ function App() {
     <FundoPrincipal>
       <EstilosGlobais />
       <Cabecalho
-        menuMobileAtivo={menuMobileAtivo} 
+        aoClicarLink={() => setMenuMobileAtivo(false)}
         onClickDarkMode={toggleDarkMode}
         aoClicarMenuMobile={() => setMenuMobileAtivo(!menuMobileAtivo)}
       />
@@ -75,6 +76,7 @@ function App() {
         <Projetos darkModeAtivo={darkModeAtivo}/>
         <SobreMim />
       </Main>
+      <BotaoVoltarAoTopo />
       <Rodape />
     </FundoPrincipal>
   )

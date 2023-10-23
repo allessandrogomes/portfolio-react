@@ -37,13 +37,13 @@ const Container = styled.div`
     }
 `
 
-const Cabecalho = ({ onClickDarkMode, aoClicarMenuMobile }) => {
+const Cabecalho = ({ onClickDarkMode, aoClicarMenuMobile, aoClicarLink }) => {
     return (
         <HeaderEstilizado >
             <Logo />
             <MenuMobile aoClicarMenuMobile={aoClicarMenuMobile}/>
             <Container id='navMobile' className='navMobile'>
-                <Nav />
+                <Nav aoClicarLink={aoClicarLink}/>
                 <RedesSociais />
                 <BotaoDarkMode onClickDarkMode={onClickDarkMode} />
             </Container>
