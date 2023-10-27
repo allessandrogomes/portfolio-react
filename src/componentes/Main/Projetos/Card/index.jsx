@@ -1,5 +1,8 @@
 import { styled } from "styled-components"
 import LinkRodapeCard from "./LinkRodapeCard"
+import { BsFillPlusCircleFill } from "react-icons/bs"
+import ModalProjeto from "./ModalProjeto"
+import { useState } from "react"
 
 const Container = styled.div`
     align-items: center;
@@ -87,10 +90,33 @@ const Rodape = styled.div`
     }
 `
 
-const Card = ({ imagem, titulo, descricao, tecnologias, darkModeAtivo}) => {
+const BotaoMaisInformacoes = {
+    cursor: "pointer",
+    width: "30px",
+    height: "30px",
+    position: "relative",
+    left: "330px",
+    top: "10px",
+    color: "#191919"
+} 
+
+const Card = ({ imagem, titulo, descricao, tecnologias, darkModeAtivo, conteudoModal}) => {
+    
+    const [modalAberto, setModalAberto] = useState(false)
+
+    const abrirModal = () => {
+        setModalAberto(true)
+    }
+
+    const fecharModal = () => {
+        setModalAberto(false)
+    }
+    
     return (
         <Container>
-            <DivImagem imagem={imagem} />
+            <DivImagem imagem={imagem}>
+                <BsFillPlusCircleFill onClick={abrirModal} style={BotaoMaisInformacoes}/>
+            </DivImagem>
             <Titulo>{titulo}</Titulo>
             <Descricao>{descricao}</Descricao>
             <Tecnologias>
@@ -106,6 +132,9 @@ const Card = ({ imagem, titulo, descricao, tecnologias, darkModeAtivo}) => {
                     texto="Ver Código"
                 />
             </Rodape>
+            <ModalProjeto abrirModal={modalAberto} fecharModal={fecharModal}>
+                {conteudoModal}
+            </ModalProjeto>
         </Container>
     )
 }

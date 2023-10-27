@@ -36,7 +36,7 @@ const BotaoVoltarAoTopo = () => {
 
     return (
         <Botao 
-            style={{ display: botaoVisivel ? "block" : "none" }} 
+            style={{ display: botaoVisivel ? "block" : "none", boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }} 
             onClick={() => document.body.scrollIntoView({ behavior: 'smooth' })}>
             <GoMoveToTop />
         </Botao>

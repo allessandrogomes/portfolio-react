@@ -1,6 +1,7 @@
 import { styled } from "styled-components"
 import TituloESubtituloSection from "../TituloESubtituloSection"
 import Card from "./Card"
+import ConteudoModalCarsOn from "./Card/ConteudoModalCarsOn"
 
 const ContainerPrincipal = styled.section`
     align-items: center;
@@ -28,6 +29,7 @@ const Projetos = ({ darkModeAtivo }) => {
                     descricao="Site de compra e venda de carros, desenvolvido para fornecer uma plataforma online fácil de usar para conectar compradores e vendedores de carros." 
                     imagem="/imagens/main/projetos/projeto-carson.png"
                     tecnologias="ReactJs e TailwindCss"
+                    conteudoModal={<ConteudoModalCarsOn />}
                 />
                 <Card
                     darkModeAtivo={darkModeAtivo} 
