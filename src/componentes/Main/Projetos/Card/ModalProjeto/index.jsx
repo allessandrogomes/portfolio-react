@@ -9,16 +9,11 @@ const ModalProjeto = ({ abrirModal, fecharModal, children }) => {
     const EstiloModal = {
         content: {
             backgroundColor: "var(--fundoPrincipal-cor)",
-            top: "20vh",
-            width: "800px",
-            margin: "0 auto"
+            width: "80%",
+            margin: "0 auto",
+            inset: "15px"
         }
     }
-
-    const DivBotaoFechar = styled.div`
-        width: 774px;
-        position: fixed;
-    `
 
     const BotaoFecharEstilizado = {
         color: "var(--texto-cor-secundaria)",
@@ -26,7 +21,9 @@ const ModalProjeto = ({ abrirModal, fecharModal, children }) => {
         height: "30px",
         right: "10px",
         cursor: "pointer",
-        position: "absolute"
+        position: "absolute",
+        backgroundColor: "var(--fundoPrincipal-cor)",
+        borderRadius: "100%"
     }
 
     return (
@@ -36,7 +33,7 @@ const ModalProjeto = ({ abrirModal, fecharModal, children }) => {
             onRequestClose={fecharModal}
             contentLabel="Exemplo Modal"
         >    
-            <DivBotaoFechar><AiFillCloseCircle style={BotaoFecharEstilizado} onClick={fecharModal}/></DivBotaoFechar>
+            <div style={{ width: "80%", position: "fixed" }}><AiFillCloseCircle style={BotaoFecharEstilizado} onClick={fecharModal}/></div>
             {children}
         </Modal>
     )

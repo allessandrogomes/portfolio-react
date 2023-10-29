@@ -2,6 +2,7 @@ import { styled } from "styled-components"
 import TituloESubtituloSection from "../TituloESubtituloSection"
 import Card from "./Card"
 import ConteudoModalCarsOn from "./Card/ConteudoModalCarsOn"
+import ConteudoModalEmDesenvolvimento from "./Card/ConteudoModalEmDesenvolvimento"
 
 const ContainerPrincipal = styled.section`
     align-items: center;
@@ -30,6 +31,8 @@ const Projetos = ({ darkModeAtivo }) => {
                     imagem="/imagens/main/projetos/projeto-carson.png"
                     tecnologias="ReactJs e TailwindCss"
                     conteudoModal={<ConteudoModalCarsOn />}
+                    urlProjeto="https://carson-react.vercel.app/"
+                    urlCodigo="https://github.com/allessandrogomes/carson-react"
                 />
                 <Card
                     darkModeAtivo={darkModeAtivo} 
@@ -37,6 +40,7 @@ const Projetos = ({ darkModeAtivo }) => {
                     descricao="Não se preocupe, novos projetos estão em desenvolvimento. Estou constantemente estudando e buscando evoluir para trazer conteúdos de excelência." 
                     imagem="/imagens/main/projetos/em-desenvolvimento.jpeg"
                     tecnologias="ReactJs e TailwindCss"
+                    conteudoModal={<ConteudoModalEmDesenvolvimento />}
                 />
                 <Card
                     darkModeAtivo={darkModeAtivo} 
@@ -44,6 +48,7 @@ const Projetos = ({ darkModeAtivo }) => {
                     descricao="Não se preocupe, novos projetos estão em desenvolvimento. Estou constantemente estudando e buscando evoluir para trazer conteúdos de excelência." 
                     imagem="/imagens/main/projetos/em-desenvolvimento.jpeg"
                     tecnologias="ReactJs e TailwindCss"
+                    conteudoModal={<ConteudoModalEmDesenvolvimento />}
                 />
                 <Card
                     darkModeAtivo={darkModeAtivo} 
@@ -51,6 +56,7 @@ const Projetos = ({ darkModeAtivo }) => {
                     descricao="Não se preocupe, novos projetos estão em desenvolvimento. Estou constantemente estudando e buscando evoluir para trazer conteúdos de excelência." 
                     imagem="/imagens/main/projetos/em-desenvolvimento.jpeg"
                     tecnologias="ReactJs e TailwindCss"
+                    conteudoModal={<ConteudoModalEmDesenvolvimento />}
                 />
                 <Card
                     darkModeAtivo={darkModeAtivo} 
@@ -58,6 +64,7 @@ const Projetos = ({ darkModeAtivo }) => {
                     descricao="Não se preocupe, novos projetos estão em desenvolvimento. Estou constantemente estudando e buscando evoluir para trazer conteúdos de excelência." 
                     imagem="/imagens/main/projetos/em-desenvolvimento.jpeg"
                     tecnologias="ReactJs e TailwindCss"
+                    conteudoModal={<ConteudoModalEmDesenvolvimento />}
                 />
                 <Card
                     darkModeAtivo={darkModeAtivo} 
@@ -65,6 +72,7 @@ const Projetos = ({ darkModeAtivo }) => {
                     descricao="Não se preocupe, novos projetos estão em desenvolvimento. Estou constantemente estudando e buscando evoluir para trazer conteúdos de excelência." 
                     imagem="/imagens/main/projetos/em-desenvolvimento.jpeg"
                     tecnologias="ReactJs e TailwindCss"
+                    conteudoModal={<ConteudoModalEmDesenvolvimento />}
                 />
             </ContainerCards>
         </ContainerPrincipal>

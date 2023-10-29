@@ -110,6 +110,10 @@ const EstilosGlobais = createGlobalStyle`
     body {
         overflow-x: hidden;
     }
+
+    .ReactModal__Overlay  {
+        z-index: 10;
+    }
 `
 
 export default EstilosGlobais

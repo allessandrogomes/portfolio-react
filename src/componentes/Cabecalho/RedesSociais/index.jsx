@@ -30,8 +30,8 @@ const AncoraLinkedin = styled.a`
 const RedesSociais = () => {
     return (
         <DivRedesSociaisEstilizada>
-            <AncoraGithub id="linkNav" className="linkNav" href="#"></AncoraGithub>
-            <AncoraLinkedin id="linkNav" className="linkNav" href="#"></AncoraLinkedin>
+            <AncoraGithub id="linkNav" className="linkNav" target="_blank" href="https://github.com/allessandrogomes"></AncoraGithub>
+            <AncoraLinkedin id="linkNav" className="linkNav" target="_blank" href="https://linkedin.com/in/allessandrogomes"></AncoraLinkedin>
         </DivRedesSociaisEstilizada>
     )
 }

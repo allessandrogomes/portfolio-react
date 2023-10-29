@@ -1,4 +1,4 @@
-import { styled } from "styled-components"
+import { StyleSheetManager, styled } from "styled-components"
 import LinkRodapeCard from "./LinkRodapeCard"
 import { BsFillPlusCircleFill } from "react-icons/bs"
 import ModalProjeto from "./ModalProjeto"
@@ -95,13 +95,13 @@ const BotaoMaisInformacoes = {
     width: "30px",
     height: "30px",
     position: "relative",
-    left: "330px",
+    left: "88%",
     top: "10px",
     color: "#191919"
-} 
+}
 
-const Card = ({ imagem, titulo, descricao, tecnologias, darkModeAtivo, conteudoModal}) => {
-    
+const Card = ({ imagem, titulo, descricao, tecnologias, darkModeAtivo, conteudoModal, urlProjeto, urlCodigo }) => {
+
     const [modalAberto, setModalAberto] = useState(false)
 
     const abrirModal = () => {
@@ -111,25 +111,29 @@ const Card = ({ imagem, titulo, descricao, tecnologias, darkModeAtivo, conteudoM
     const fecharModal = () => {
         setModalAberto(false)
     }
-    
+
     return (
         <Container>
-            <DivImagem imagem={imagem}>
-                <BsFillPlusCircleFill onClick={abrirModal} style={BotaoMaisInformacoes}/>
-            </DivImagem>
+            <StyleSheetManager shouldForwardProp={(prop) => prop !== 'imagem'}>
+                <DivImagem imagem={imagem}>
+                    <BsFillPlusCircleFill onClick={abrirModal} style={BotaoMaisInformacoes} />
+                </DivImagem>
+            </StyleSheetManager>
             <Titulo>{titulo}</Titulo>
             <Descricao>{descricao}</Descricao>
             <Tecnologias>
                 <span>Tecnologias</span> : {tecnologias}
             </Tecnologias>
             <Rodape>
-                <LinkRodapeCard 
-                    imagem={darkModeAtivo ? '/imagens/main/projetos/cards/livepreview-dark-icon.png' : '/imagens/main/projetos/cards/livepreview-ligth-icon.png'} 
+                <LinkRodapeCard
+                    imagem={darkModeAtivo ? '/imagens/main/projetos/cards/livepreview-dark-icon.png' : '/imagens/main/projetos/cards/livepreview-ligth-icon.png'}
                     texto="Ver Projeto"
+                    url={urlProjeto}
                 />
-                <LinkRodapeCard 
-                    imagem={darkModeAtivo? '/imagens/main/projetos/cards/github-dark-icon.png' : '/imagens/main/projetos/cards/github-ligth-icon.png'} 
+                <LinkRodapeCard
+                    imagem={darkModeAtivo ? '/imagens/main/projetos/cards/github-dark-icon.png' : '/imagens/main/projetos/cards/github-ligth-icon.png'}
                     texto="Ver Código"
+                    url={urlCodigo}
                 />
             </Rodape>
             <ModalProjeto abrirModal={modalAberto} fecharModal={fecharModal}>

@@ -5,6 +5,7 @@ const Ancora = styled.a`
     display: flex;
     text-decoration: none;
     gap: 5px;
+    cursor: pointer;
 `
 
 const Imagem = styled.img`
@@ -29,9 +30,9 @@ const Texto = styled.p`
     }
 `
 
-const LinkRodapeCard = ({ imagem, texto }) => {
+const LinkRodapeCard = ({ imagem, texto, url }) => {
     return (
-        <Ancora href="#">
+        <Ancora target="_blank" href={url}>
             <Imagem src={imagem} />
             <Texto>{texto}</Texto>
         </Ancora>

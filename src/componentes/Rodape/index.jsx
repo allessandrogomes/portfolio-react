@@ -128,8 +128,8 @@ const Rodape = () => {
                         <p>+55 74 99925 8446</p>
                         <p>alllessandrogomes@gmail.com</p>
                         <div>
-                            <AncoraGithub href="#"></AncoraGithub>
-                            <AncoraLinkedin href="#"></AncoraLinkedin>
+                            <AncoraGithub target="_blank" href="https://github.com/allessandrogomes"></AncoraGithub>
+                            <AncoraLinkedin target="_blank" href="https://www.linkedin.com/in/allessandrogomes"></AncoraLinkedin>
                         </div>
                     </Contato>
                 </ContainerContato>
