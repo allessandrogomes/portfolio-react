@@ -94,7 +94,7 @@ const Nav = ({ aoClicarLink }) => {
                 <Link 
                     id="linkNav" 
                     className="linkNav">
-                    <h3><a href="#">Currículo</a></h3>
+                    <h3><a target="_blank" href="https://drive.google.com/file/d/11lUyIryDiEDAYH4DJrFvTrQCeTG6G5ke/view?usp=sharing">Currículo</a></h3>
                 </Link>
             </ul>
         </NavEstilizado>

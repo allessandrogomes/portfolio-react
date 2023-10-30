@@ -10,6 +10,7 @@ const Container = styled.div`
     width: 100%;
     height: 100%;
     gap: 50px;
+    text-align: center;
 `
 
 const EstilizacaoDocumentConfig = {
@@ -24,7 +25,6 @@ const ConteudoModalEmDesenvolvimento = () => {
             <TituloModal titulo="Projeto em Desenvolvimento" />
             <BsFileEarmarkCode style={EstilizacaoDocumentConfig} />
         </Container>
-
     )
 }
 
