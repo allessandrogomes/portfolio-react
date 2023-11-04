@@ -3,6 +3,7 @@ import TituloESubtituloSection from "../TituloESubtituloSection"
 import Card from "./Card"
 import ConteudoModalCarsOn from "./Card/ConteudoModalCarsOn"
 import ConteudoModalEmDesenvolvimento from "./Card/ConteudoModalEmDesenvolvimento"
+import ConteudoModalPortfolio from "./Card/ConteudoModalPortfolio"
 
 const ContainerPrincipal = styled.section`
     align-items: center;
@@ -36,11 +37,13 @@ const Projetos = ({ darkModeAtivo }) => {
                 />
                 <Card
                     darkModeAtivo={darkModeAtivo} 
-                    titulo="Em desenvolvimento"
-                    descricao="Não se preocupe, novos projetos estão em desenvolvimento. Estou constantemente estudando e buscando evoluir para trazer conteúdos de excelência." 
-                    imagem="/imagens/main/projetos/em-desenvolvimento.jpeg"
-                    tecnologias="ReactJs e TailwindCss"
-                    conteudoModal={<ConteudoModalEmDesenvolvimento />}
+                    titulo="Portfólio"
+                    descricao="Portfólio para apresentação dos meus principais projetos e demais informações sobre mim." 
+                    imagem="/imagens/main/projetos/portfolio.png"
+                    tecnologias="ReactJs e Styled-Components"
+                    conteudoModal={<ConteudoModalPortfolio />}
+                    urlProjeto="https://allessandrogomes-portfolio.vercel.app/"
+                    urlCodigo="https://github.com/allessandrogomes/portfolio-react"
                 />
                 <Card
                     darkModeAtivo={darkModeAtivo} 
