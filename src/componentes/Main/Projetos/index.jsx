@@ -4,6 +4,7 @@ import Card from "./Card"
 import ConteudoModalCarsOn from "./Card/ConteudoModalCarsOn"
 import ConteudoModalEmDesenvolvimento from "./Card/ConteudoModalEmDesenvolvimento"
 import ConteudoModalPortfolio from "./Card/ConteudoModalPortfolio"
+import ConteudoModalJornadaDoHeroi from "./Card/ConteudoModalJornadaDoHeroi"
 
 const ContainerPrincipal = styled.section`
     align-items: center;
@@ -47,11 +48,13 @@ const Projetos = ({ darkModeAtivo }) => {
                 />
                 <Card
                     darkModeAtivo={darkModeAtivo} 
-                    titulo="Em desenvolvimento"
-                    descricao="Não se preocupe, novos projetos estão em desenvolvimento. Estou constantemente estudando e buscando evoluir para trazer conteúdos de excelência." 
-                    imagem="/imagens/main/projetos/em-desenvolvimento.jpeg"
-                    tecnologias="ReactJs e TailwindCss"
-                    conteudoModal={<ConteudoModalEmDesenvolvimento />}
+                    titulo="Jornada do Herói"
+                    descricao="Explore a diversidade dos seus heróis favoritos enquanto eles se enfrentam em batalhas emocionantes!" 
+                    imagem="/imagens/main/projetos/jornada-do-heroi.png"
+                    tecnologias="ReactJs, TailwindCss, MUI e React Context"
+                    conteudoModal={<ConteudoModalJornadaDoHeroi />}
+                    urlProjeto="https://jornada-do-heroi-allessandrogomes.vercel.app/"
+                    urlCodigo="https://github.com/allessandrogomes/jornada-do-heroi"
                 />
                 <Card
                     darkModeAtivo={darkModeAtivo} 
