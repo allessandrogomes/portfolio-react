@@ -30,15 +30,19 @@ const Texto = styled.h4`
 const SobreMim = () => {
     return (
         <Section id="sobre">
-            <TituloESubtituloSection titulo="Sobre mim"/>
+            <TituloESubtituloSection titulo="Sobre mim" />
             <Texto>
-                Olá! Meu nome é Alessandro Gomes e sou um estudante de Análise e Desenvolvimento de Sistemas com foco em desenvolvimento de Front-End. Minhas principais habilidades incluem HTML, CSS, JavaScript e ReactJs, bem como Git, GitHub, Fetch API, SASS e TailwindCSS. Estou constantemente buscando maneiras de aprimorar meus aplicativos e torná-los mais eficientes e usáveis. Como estudante, tenho uma mentalidade analítica e estou sempre disposto a aprender novas habilidades e conhecimentos. Eu amo a sensação de ver meu código funcionando e apreciar a satisfação que vem com a resolução de problemas e a criação de aplicativos atraentes e funcionais.
+                Trabalho colaborativamente com designers para assegurar que cada projeto reflita fidelidade visual e operacional. Além disso, mantenho um compromisso contínuo com a aprendizagem e atualização profissional, o que me permite acompanhar as últimas tendências e melhores práticas em desenvolvimento Front-End. <br/>
+                <br/>
+                Capacidade de resolver problemas de forma criativa, trabalhar eficazmente tanto de forma independente quanto em equipe, e adaptar-me a diversos ambientes de trabalho e culturas de colaboradores. Participo ativamente em revisões de código para garantir a qualidade e consistência, e valorizo a comunicação clara e eficaz para garantir que todos os objetivos do projeto sejam atingidos. <br/>
+                <br/>
+                No momento estou em processo de finalização do meu curso superior em Análise e Desenvolvimento de Sistemas, na UNINASSAU em Petrolina-PE, com previsão de término em Julho de 2024. Após este, pretendo iniciar meu curso de Engenharia de Software e continuar me aperfeiçoando na área até me tornar um Engenheiro/Desenvolvedor de Software Full Stack.
             </Texto>
-            <TituloESubtituloSection titulo="Experiência"/>
-            <BarInfo texto="Estagiário de Logística" horario="30h / semana" companhia="Distribuidor de Baterias Moura - Bonfim" local="Juazeiro - Ba" periodo="Junho 2022 - Atual"/>
-            <BarInfo texto="Jovem Aprendiz de Logística" horario="20h / semana" companhia="Distribuidor de Baterias Moura - Bonfim" local="Juazeiro - Ba" periodo="Abril 2021 - Junho 2022"/>
-            <TituloESubtituloSection titulo="Educação"/>
-            <BarInfo texto="Análise e Desenvolvimento de Sistemas" horario="flexível" companhia="UNINASSAU" local="Petrolina - Pe" periodo="Junho 2022 - Atual"/>
+            <TituloESubtituloSection titulo="Experiência" />
+            <BarInfo texto="Estagiário de Logística" horario="30h / semana" companhia="Distribuidor de Baterias Moura - Bonfim" local="Juazeiro - Ba" periodo="Junho 2022 - Atual" />
+            <BarInfo texto="Jovem Aprendiz de Logística" horario="20h / semana" companhia="Distribuidor de Baterias Moura - Bonfim" local="Juazeiro - Ba" periodo="Abril 2021 - Junho 2022" />
+            <TituloESubtituloSection titulo="Educação" />
+            <BarInfo texto="Análise e Desenvolvimento de Sistemas" horario="flexível" companhia="UNINASSAU" local="Petrolina - Pe" periodo="Junho 2022 - Atual" />
         </Section>
     )
 }
