@@ -25,7 +25,7 @@ const PalavraPersonalizada = styled.span`
 
 const TextoChamada = () => {
     return (
-        <Texto>Olá 👋,<br/>Meu nome é<br/><PalavraPersonalizada>Alessandro</PalavraPersonalizada><br/>Eu sou um<br/>Desenvolvedor<br/>Front-End</Texto>
+        <Texto><PalavraPersonalizada>Alessandro</PalavraPersonalizada><br/>Desenvolvedor<br/>Front-End</Texto>
     )
 }
 
