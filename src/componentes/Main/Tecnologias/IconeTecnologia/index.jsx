@@ -7,7 +7,7 @@ const Container = styled.div`
     justify-content: center;
     :hover{
         transition: transform 0.3s ease;
-        transform: scale(1.2);
+        transform: scale(1.075);
         span{
             display: block;
         }
@@ -41,9 +41,17 @@ const IconesTecnologia = ({ darkModeAtivo }) => {
                 <Icone imagem={'/imagens/main/tecnologias/html-icon.svg'}><span>HTML</span></Icone>
                 <Icone imagem={'/imagens/main/tecnologias/css-icon.svg'}><span>CSS</span></Icone>
                 <Icone imagem={'/imagens/main/tecnologias/javascript-icon.svg'}><span>JAVASCRIPT</span></Icone>
+                <Icone imagem={'/imagens/main/tecnologias/typescript-logo.svg'}><span>TYPESCRIPT</span></Icone>
+                <Icone imagem={'/imagens/main/tecnologias/npm-logo.svg'}><span>NPM</span></Icone>
                 <Icone imagem={'/imagens/main/tecnologias/react-icon.svg'}><span>REACTJS</span></Icone>
+                <Icone imagem={'/imagens/main/tecnologias/electron-logo.svg'}><span>ELECTRON</span></Icone>
+                <Icone imagem={'/imagens/main/tecnologias/vite-logo.svg'}><span>VITE</span></Icone>
+                <Icone imagem={'/imagens/main/tecnologias/redux-logo.svg'}><span>REDUX</span></Icone>
+                <Icone imagem={'/imagens/main/tecnologias/styled-components-logo.svg'}><span>STYLED-COMPONENTS</span></Icone>
                 <Icone imagem={'/imagens/main/tecnologias/tailwindcss-icon.svg'}><span>TAILWINDCSS</span></Icone>
                 <Icone imagem={'/imagens/main/tecnologias/sass-icon.svg'}><span>SASS</span></Icone>
+                <Icone imagem={'/imagens/main/tecnologias/material-ui-logo.svg'}><span>MUI</span></Icone>
+                <Icone imagem={'/imagens/main/tecnologias/bootstrap-logo.svg'}><span>BOOTSTRAP</span></Icone>
                 <Icone imagem={'/imagens/main/tecnologias/git-icon.svg'}><span>GIT</span></Icone>
                 <Icone imagem={darkModeAtivo ? '/imagens/main/tecnologias/github-dark-icon.svg' : '/imagens/main/tecnologias/github-ligth-icon.svg'}><span>GITHUB</span></Icone>
             </StyleSheetManager>
