@@ -5,6 +5,7 @@ import ConteudoModalCarsOn from "./Card/ConteudoModalCarsOn"
 import ConteudoModalEmDesenvolvimento from "./Card/ConteudoModalEmDesenvolvimento"
 import ConteudoModalPortfolio from "./Card/ConteudoModalPortfolio"
 import ConteudoModalJornadaDoHeroi from "./Card/ConteudoModalJornadaDoHeroi"
+import ConteudoModalStockflowManager from "./Card/ConteudoModalStockflowManager"
 
 const ContainerPrincipal = styled.section`
     align-items: center;
@@ -28,8 +29,18 @@ const Projetos = ({ darkModeAtivo }) => {
             <ContainerCards>
                 <Card
                     darkModeAtivo={darkModeAtivo}
+                    titulo="StockFlow Manager"
+                    descricao="O StockFlow Manager é um software robusto para gerenciar baterias em garantia no estoque."
+                    imagem="/imagens/main/projetos/stockflow-manager.svg"
+                    tecnologias="React, Vite e Electron"
+                    conteudoModal={<ConteudoModalStockflowManager />}
+                    urlProjeto="https://github.com/allessandrogomes/stockflow-manager/releases/tag/v1.0.0"
+                    urlCodigo="https://github.com/allessandrogomes/stockflow-manager"
+                />
+                <Card
+                    darkModeAtivo={darkModeAtivo}
                     titulo="CarsOn"
-                    descricao="Site de compra e venda de carros, desenvolvido para fornecer uma plataforma online fácil de usar para conectar compradores e vendedores de carros." 
+                    descricao="Site de compra e venda de carros, desenvolvido para fornecer uma plataforma online fácil de usar para conectar compradores e vendedores de carros."
                     imagem="/imagens/main/projetos/projeto-carson.png"
                     tecnologias="ReactJs e TailwindCss"
                     conteudoModal={<ConteudoModalCarsOn />}
@@ -37,9 +48,9 @@ const Projetos = ({ darkModeAtivo }) => {
                     urlCodigo="https://github.com/allessandrogomes/carson-react"
                 />
                 <Card
-                    darkModeAtivo={darkModeAtivo} 
+                    darkModeAtivo={darkModeAtivo}
                     titulo="Portfólio"
-                    descricao="Portfólio para apresentação dos meus principais projetos e demais informações sobre mim." 
+                    descricao="Portfólio para apresentação dos meus principais projetos e demais informações sobre mim."
                     imagem="/imagens/main/projetos/portfolio.png"
                     tecnologias="ReactJs e Styled-Components"
                     conteudoModal={<ConteudoModalPortfolio />}
@@ -47,9 +58,9 @@ const Projetos = ({ darkModeAtivo }) => {
                     urlCodigo="https://github.com/allessandrogomes/portfolio-react"
                 />
                 <Card
-                    darkModeAtivo={darkModeAtivo} 
+                    darkModeAtivo={darkModeAtivo}
                     titulo="Jornada do Herói"
-                    descricao="Explore a diversidade dos seus heróis favoritos enquanto eles se enfrentam em batalhas emocionantes!" 
+                    descricao="Explore a diversidade dos seus heróis favoritos enquanto eles se enfrentam em batalhas emocionantes!"
                     imagem="/imagens/main/projetos/jornada-do-heroi.png"
                     tecnologias="ReactJs, TailwindCss, MUI e React Context"
                     conteudoModal={<ConteudoModalJornadaDoHeroi />}
@@ -57,27 +68,19 @@ const Projetos = ({ darkModeAtivo }) => {
                     urlCodigo="https://github.com/allessandrogomes/jornada-do-heroi"
                 />
                 <Card
-                    darkModeAtivo={darkModeAtivo} 
+                    darkModeAtivo={darkModeAtivo}
                     titulo="Em desenvolvimento"
-                    descricao="Não se preocupe, novos projetos estão em desenvolvimento. Estou constantemente estudando e buscando evoluir para trazer conteúdos de excelência." 
+                    descricao="Não se preocupe, novos projetos estão em desenvolvimento. Estou constantemente estudando e buscando evoluir para trazer conteúdos de excelência."
                     imagem="/imagens/main/projetos/em-desenvolvimento.jpeg"
-                    tecnologias="ReactJs e TailwindCss"
+                    tecnologias=""
                     conteudoModal={<ConteudoModalEmDesenvolvimento />}
                 />
                 <Card
-                    darkModeAtivo={darkModeAtivo} 
+                    darkModeAtivo={darkModeAtivo}
                     titulo="Em desenvolvimento"
-                    descricao="Não se preocupe, novos projetos estão em desenvolvimento. Estou constantemente estudando e buscando evoluir para trazer conteúdos de excelência." 
+                    descricao="Não se preocupe, novos projetos estão em desenvolvimento. Estou constantemente estudando e buscando evoluir para trazer conteúdos de excelência."
                     imagem="/imagens/main/projetos/em-desenvolvimento.jpeg"
-                    tecnologias="ReactJs e TailwindCss"
-                    conteudoModal={<ConteudoModalEmDesenvolvimento />}
-                />
-                <Card
-                    darkModeAtivo={darkModeAtivo} 
-                    titulo="Em desenvolvimento"
-                    descricao="Não se preocupe, novos projetos estão em desenvolvimento. Estou constantemente estudando e buscando evoluir para trazer conteúdos de excelência." 
-                    imagem="/imagens/main/projetos/em-desenvolvimento.jpeg"
-                    tecnologias="ReactJs e TailwindCss"
+                    tecnologias=""
                     conteudoModal={<ConteudoModalEmDesenvolvimento />}
                 />
             </ContainerCards>
